@@ -7,11 +7,11 @@
     <body>
 
         <header class="main-header">
-            <a class="main-header-logo" href="#">
-                <img src="img/logo.svg" alt="Логотип Седоны">
-            </a>
             <nav class="main-nav">
                 <!-- логотип положи сюда -->
+                <a class="main-header-logo" href="#">
+                    <img src="img/logo.svg" alt="Логотип Седоны">
+                </a>
                 <ul class="site-navigation">
                     <li><a href="#">Гостиницы</a></li>
                     <li><a href="#">Карта штата</a></li>
@@ -23,8 +23,10 @@
 
         <main class="container">
             <!-- для h1 и имг должна быть своя section. Назови как-то secton.main-section. А после этой секции уже features -->
-            <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-            <img src="img/greeting.png" alt="Welcome to the gorgeous Sedona">
+            <section class="main-section">
+                <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <img src="img/greeting.png" alt="Welcome to the gorgeous Sedona">
+            </section>
 
             <section class="features">
                 <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
@@ -34,7 +36,9 @@
                         <p>— №1 —</p>
                         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         <!-- для img сделай обвертку свою div.features-img или как хочешь сама -->
-                        <img src="img/index-city.jpeg" alt="Настоящий городок">
+                        <div class="features-img img-city">
+                            <img src="img/index-city.jpeg" alt="Настоящий городок">
+                        </div>
 
                         <ul class="features-item-city">
                             <li>
@@ -55,7 +59,10 @@
                         <h3>Там есть Мост дьявола</h3>
                         <p>— №2 —</p>
                         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                        <img src="img/index-devils-bridge.jpeg" alt="Мост дьявола">
+                        <!--Добавила здесь аналогичную обертку для img-->
+                        <div class="features-img img-bridge">
+                            <img src="img/index-devils-bridge.jpeg" alt="Мост дьявола">
+                        </div>
                     </li>
                     <li class="features-item">
                         <h3>Небольшая площадь</h3>
@@ -79,13 +86,16 @@
                 <h2>Заинтересовались?</h2>
                 <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
                 <!-- поставь тут сразу кнопку, как в макете -->
+                <input type="button" class="btn btn-search" value="Поиск гостиницы в Седоне">
                 <!--Здесь будет форма-->
-              
-                <!-- map Должна быть в отедьной секции, после hotel-seacrh. --> 
+                <!-- map Должна быть в отедьной секции, после hotel-seacrh. -->
+            </section>
+
+            <!-- тут должен быть secction.map -->
+            <section class="map">
+                <h2 class="visually-hidden">Схема проезда</h2>
                 <img src="img/map.png" alt="Карта Седоны">
             </section>
-            
-            <!-- тут должен быть secction.map -->
 
             <footer class="main-footer">
                 <div class="footer-hashtag">
