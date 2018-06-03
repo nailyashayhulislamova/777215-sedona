@@ -7,12 +7,12 @@
     <body>
 
         <header class="main-header">
-          
+
             <!-- в главной поменяла расположение логотипа, а тут нет :) -->
-            <a class="main-header-logo" href="#">
-                <img src="img/logo.svg" alt="Логотип Седоны">
-            </a>
             <nav class="main-nav">
+                <a class="main-header-logo" href="#">
+                    <img src="img/logo.svg" alt="Логотип Седоны">
+                </a>
                 <ul class="site-navigation">
                     <li><a href="#">Гостиницы</a></li>
                     <li><a href="#">Карта штата</a></li>
@@ -31,14 +31,14 @@
                     <p>Найдено: 3</p>
                     <!-- Пропустил прошлый раз, каждый текст внутри li - это ссылка -->
                     <ul class="results-filter-items">
-                        <li>По цене</li>
-                        <li>По типу</li>
-                        <li>По рейтингу</li>
+                        <li><a href="#">По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По рейтингу</a></li>
                     </ul>
                     <ul class="results-filter order-buttons">
                         <!-- и тут тоже внутри Li текст - ссылки -->
-                        <li class="order-buttons-up">По возрастанию</li>
-                        <li class="order-buttons-down">По убыванию</li>
+                        <li class="order-buttons-up"><a href="#">По возрастанию</a></li>
+                        <li class="order-buttons-down"><a href="#">По убыванию</a></li>
                     </ul>
                 </div>
 
@@ -49,7 +49,7 @@
                             <!-- название отеля - ссылка -->
                             <!-- форматируй код. h3 должен быть с новой строки. не забудь поставить так же ниже -->
                             <a class="hotel-name" href="#">
-                              <h3>Amara Resort & Spa</h3>
+                                <h3>Amara Resort & Spa</h3>
                             </a>
 
                             <!-- имг лучше обвернуть в обвертку div.hotel-image -->
