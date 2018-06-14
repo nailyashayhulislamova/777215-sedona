@@ -1,0 +1,450 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+}
+.main-wrapper {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+    font-weight: 700;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation .current-page,
+.site-navigation .current-page:hover,
+.site-navigation .current-page:focus {
+    color: #766357;
+    font-weight: 700;
+}
+
+.main-section {
+    text-align: center;
+    background-color: #d3e4ee;
+    background-image:
+        url("../img/shape.png"),
+        url("../img/background-photo.jpg");
+    background-position:
+        bottom center,
+        top center;
+    background-repeat: no-repeat;
+}
+
+.main-section h1 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.features-list,
+.more-features {
+    list-style: none;
+}
+
+.features {
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.features-item h3,
+.more-features h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.features-item p,
+.more-features p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.features-item:nth-child(-n+2) {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.features-item:first-child {
+    background-image: url("../img/index-city.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.features-item:nth-child(2) {
+    background-image: url("../img/index-devils-bridge.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.features-item:nth-child(n+3) {
+    background-color: #eeeeee;
+}
+
+.more-features {
+    padding: 0;
+}
+
+.more-features p {
+    color: 333333;
+}
+
+.more-item {
+    margin: 0;
+}
+
+.search {
+    text-align: center;
+}
+
+.search-lead {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.search-text {
+    line-height: 24px;
+    color: #333333;
+}
+
+.search-button-show {
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.search-button-show:hover {
+    background-color: #604e43;
+}
+
+.search-button-show:focus {
+    color: rgba(256, 256, 256, 0.3);
+    background-color: #503d32;
+}
+
+.search-form {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.search-form input {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.search-form input:hover {
+    background-color: #ebebeb;
+}
+
+.search-form input:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.search-button-less,
+.search-button-more {
+    background-color: #f2f2f2;
+}
+
+.search-button-less svg,
+.search-button-more svg {
+    fill: #a9a9a9;
+}
+
+.search-button-less:hover svg,
+.search-button-more:hover svg {
+    fill: #000000;
+}
+
+.search-button-less:focus svg,
+.search-button-more:focus svg {
+    fill: #81b3d2;
+}
+
+.search-button-calendar {
+    background-color: #f2f2f2;
+}
+
+.search-button-calendar svg {
+    fill: #c9c9c9;
+}
+
+.search-button-calendar:hover svg {
+    fill: #000000;
+}
+
+.search-button-calendar:focus svg {
+    fill: #81b3d1;
+}
+
+.search-button-find {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+}
+
+.search-button-find:hover {
+    background-color: #669dc0;
+}
+
+.search-button-find:focus {
+    color: rgba(256, 256, 256, 0.3);
+    background-color: #5495bd;
+}
+
+.main-footer {
+    background-image: url("../img/map.jpg");
+    background-color: #ffffff;
+    background-position: center center;
+}
+
+.footer-wrapper {
+    background-color: rgba(256, 256, 256, 0.9);
+}
+
+.main-footer-hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.social-button {
+    background-color: #81b3d1;
+}
+
+.social-button svg {
+    fill: #ffffff;
+}
+
+.social-button:hover {
+    background-color: #669dc0;
+}
+
+.social-button:focus {
+    background-color: #5495bd;
+}
+
+.social-button:focus svg {
+    fill: rgba(256, 256, 256, 0.3);
+}
+
+.copyright {
+    line-height: 26px;
+}
+
+.copyright-link svg {
+    fill: #000000;
+}
+
+.copyright-link:hover svg {
+    fill: #81b3d2;
+}
+
+.copyright-link:focus svg {
+    fill: #bdbbbc;
+}
+
+.filters {
+    color: #ffffff;
+    background-color: #7395bb;
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.filters-item legend,
+.filters-item p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.filters-item ul {
+    list-style: none;
+}
+
+.filters-column-right input {
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #ffffff;
+} 
+
+input[type="text"]::-moz-placeholder {
+    color: #ffffff;
+}
+
+.filters-form button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.results-sort p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.results-sort ul,
+.content ul {
+    list-style: none;
+}
+
+.results-sort span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.sort-list a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom-style: dashed; 
+    border-bottom-width: 1px;
+    border-color: #81b3d2;
+}
+
+.sort-list a:hover {
+    color: #81b3d2;
+}
+
+.sort-list a:focus {
+    color: #000000;
+    border-bottom: none;
+}
+
+.sort-option-active a {
+    color: #81b3d2;
+    border-bottom: none;
+}
+
+.icon-sort svg {
+    fill: #c9c9c9;
+}
+
+.icon-sort:hover svg {
+    fill: #000000;
+}
+
+.icon-sort:focus svg {
+    fill: #81b3d1;
+}
+
+.content-item-name {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+}
+
+.content-item-info {
+    color: #666666;
+}
+
+.content-item-info p {
+    background-color: #f1f1f1;
+}
+
+.results-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.result-button-more {
+    background-color: #81b3d2;
+}
+
+.result-button-more:hover {
+    background-color: #669dc0;
+}
+
+.result-button-more:focus {
+    color: rgba(256, 256, 256, 0.3);
+    background-color: #5495bd;
+}
+
+.result-button-booking {
+    background-color: #756357;
+}
+
+.result-button-booking:hover {
+    background-color: #604e43;
+}
+
+.result-button-booking:focus {
+    color: rgba(256, 256, 256, 0.3);
+    background-color: #503d32;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
