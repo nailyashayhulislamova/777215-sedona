@@ -1,6 +1,4 @@
 body {
-    display: flex;
-    justify-content: space-between;
     height: auto;
     margin: 0;
     padding: 0;
@@ -22,7 +20,6 @@ body {
 }
 
 a {
-    display: block;
     text-decoration: none;
 }
 
@@ -41,6 +38,7 @@ a {
 }
 
 .main-header-logo {
+    display: block;
     margin: 0;
     padding: 0;
 }
@@ -257,6 +255,30 @@ a {
     padding-right: 65px;
 }
 
+
+.features-item-img {
+    display: flex;
+    width: 66.67%;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.features-item:nth-of-type(1) .features-item-img {
+    background-image: url("../img/index-city.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.features-item:nth-of-type(2) .features-item-img {
+    background-image: url("../img/index-devils-bridge.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*
 .features-item:first-of-type::after {
     content: "";
     width: 66.67%;
@@ -272,7 +294,7 @@ a {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
+*/
 .more-features p {
     color: 333333;
 }
@@ -779,7 +801,6 @@ input[type="text"]::-moz-placeholder {
 
 .content-item-stars {
     display: flex;
-    order: -1;
     margin-bottom: 47px;
 }
 
