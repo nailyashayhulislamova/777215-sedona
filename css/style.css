@@ -43,10 +43,9 @@ a {
 .main-header-logo {
     display: block;
     position: absolute;
-    left: 50 процентов
+    left: 50%;
     top: 0;
-    margin: 0; - 50% от ширины
-    padding: 0; зачем паддинг?
+    margin-left: -69px;
 }
 
 .site-navigation {
@@ -65,7 +64,7 @@ a {
 .site-navigation li {
     margin: 0;
     padding: 0;
-    width: 20%;
+    width: 22.7%;
 }
 
 .site-navigation li:nth-of-type(2) {
@@ -358,6 +357,7 @@ a {
     padding: 0;
     border-style: none;
     vertical-align: middle;
+    outline: none;
 }
 
 .search-button-show {
@@ -414,6 +414,7 @@ a {
 
 .search-form input {
     height: 38px;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -421,7 +422,8 @@ a {
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
-    border-style: none;
+    border: 2px solid #f2f2f2;
+    outline: none;
 }
 
 .search-form-item label {
@@ -443,7 +445,7 @@ a {
 
 .search-form-item:nth-of-type(1) input,
 .search-form-item:nth-of-type(2) input {
-    width: 296px;
+    width: 308px;
     padding-left: 12px;
 }
 
@@ -453,7 +455,6 @@ a {
     height: 38px;
     padding: 0;
     text-align: center;
-    border-style: none;
 }
 
 .search-form-item:nth-of-type(4) label {
@@ -466,11 +467,12 @@ a {
 
 .search-form input:hover {
     background-color: #ebebeb;
+    border-color: #ebebeb;
 }
 
 .search-form input:focus {
     background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+    border-color: #e5e5e5;
 }
 
 .search-button-less,
@@ -656,7 +658,7 @@ a {
 
 .filters {
     padding-top: 27px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     padding-left: 72px;
     padding-right: 72px;
     color: #ffffff;
@@ -705,19 +707,19 @@ a {
 }
 
 .filters-option label {
-  position: relative;
-  display: block;
-  user-select: none;
+     position: relative;
+     display: block;
+     user-select: none;
 }
 
 .filters-input-checkbox + label::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 0;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #ffffff;
+     content: "";
+     position: absolute;
+     left: -40px;
+     top: 0;
+     width: 19px;
+     height: 19px;
+     border: 2px solid #ffffff;
   border-radius: 3px;
 }
 
@@ -726,8 +728,8 @@ a {
 }
 
 .filters-input-checkbox:checked + label::before {
-    width: 27px;
-    height: 23px;
+    width: 29px;
+    height: 25px;
     border: none;
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
@@ -747,114 +749,132 @@ a {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .price-controls {
-  position: relative;
-  height: 36px;
-  margin-bottom: 20px;
-  font-size: 0;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 316px;
+    /*box-sizing: border-box;*/
+    height: 32px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 22px;
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-  cursor: pointer;
+    display: flex;
+    width: 155px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 21px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+.min-price {
+    padding-left: 65px;
+}
+
+.max-price {
+    padding-left: 52px;
+}
+
+.price-controls span {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    text-align: right;
 }
 
 .price-controls input {
-  width: 55px;
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  font-size: 14px;
-  line-height: 21px;
-  background: none;
-  border: none;
+    width: 55px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    color: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    background: none;
+    border: none;
 }
 
 .range-controls {
-  position: relative;
-  margin-bottom: 32px;
+    position: relative;
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
-  background: #ffffff;
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+    background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+    left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 5px 34px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+    display: block;
+    margin: auto auto;
+    padding: 5px 34px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
-  background: #ffffff;
+    color: #000000;
+    background: #ffffff;
 }
 
 .filters-form button {
@@ -869,10 +889,11 @@ a {
 .results-sort {
     display: flex;
     align-items: baseline;
-    padding-top: 32px;
-    padding-bottom: 33px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 72px;
     padding-right: 73px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .results-sort p {
@@ -885,7 +906,7 @@ a {
 
 .results-sort p:nth-of-type(2) {
     margin-left: 45px;
-    margin-right: 36px;
+    margin-right: 40px;
 }
 
 .results-sort ul,
@@ -900,7 +921,7 @@ a {
 }
 
 .sort-list li {
-    margin-right: 29px;
+    margin-right: 33px;
 }
 
 .results-sort span {
@@ -992,6 +1013,7 @@ a {
 }
 
 .content-item-name {
+    margin-top: -5px;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
