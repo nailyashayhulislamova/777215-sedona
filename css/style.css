@@ -405,6 +405,7 @@ a {
 }
 
 .search-form-item {
+    position: relative;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -445,7 +446,7 @@ a {
 
 .search-form-item:nth-of-type(1) input,
 .search-form-item:nth-of-type(2) input {
-    width: 308px;
+    width: 346px;
     padding-left: 12px;
 }
 
@@ -498,9 +499,11 @@ a {
 }
 
 .search-button-calendar {
+    position: absolute;
+    right: 0;
     width: 38px;
     height: 38px;
-    background-color: #f2f2f2;
+    background-color: transparent;
 }
 
 .search-button-calendar svg {
