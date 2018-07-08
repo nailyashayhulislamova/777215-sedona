@@ -88,13 +88,13 @@ a {
     color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation .current-page,
 .site-navigation .current-page:hover,
-.site-navigation .current-page:focus {
+.site-navigation .current-page:active {
     color: #766357;
     font-weight: 700;
 }
@@ -289,12 +289,14 @@ a {
 
 .features-item:nth-of-type(1) .features-item-img {
     background-image: url("../img/index-city.jpg");
+    background-color: #b5c4d6;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .features-item:nth-of-type(2) .features-item-img {
     background-image: url("../img/index-devils-bridge.jpg");
+    background-color: #b5c4d6;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -357,7 +359,6 @@ a {
     padding: 0;
     border-style: none;
     vertical-align: middle;
-    outline: none;
 }
 
 .search-button-show {
@@ -376,7 +377,7 @@ a {
     background-color: #604e43;
 }
 
-.search-button-show:focus {
+.search-button-show:active {
     color: rgba(256, 256, 256, 0.3);
     background-color: #503d32;
 }
@@ -424,7 +425,6 @@ a {
     line-height: 26px;
     text-transform: uppercase;
     border: 2px solid #f2f2f2;
-    outline: none;
 }
 
 .search-form-item label {
@@ -471,7 +471,7 @@ a {
     border-color: #ebebeb;
 }
 
-.search-form input:focus {
+.search-form input:active {
     background-color: #ffffff;
     border-color: #e5e5e5;
 }
@@ -493,8 +493,8 @@ a {
     fill: #000000;
 }
 
-.search-button-less:focus svg,
-.search-button-more:focus svg {
+.search-button-less:active svg,
+.search-button-more:active svg {
     fill: #81b3d2;
 }
 
@@ -514,7 +514,7 @@ a {
     fill: #000000;
 }
 
-.search-button-calendar:focus svg {
+.search-button-calendar:active svg {
     fill: #81b3d1;
 }
 
@@ -533,7 +533,7 @@ a {
     background-color: #669dc0;
 }
 
-.search-button-find:focus {
+.search-button-find:active {
     color: rgba(256, 256, 256, 0.3);
     background-color: #5495bd;
 }
@@ -614,11 +614,11 @@ a {
     background-color: #669dc0;
 }
 
-.social-button:focus {
+.social-button:active {
     background-color: #5495bd;
 }
 
-.social-button:focus svg {
+.social-button:active svg {
     fill: rgba(256, 256, 256, 0.3);
 }
 
@@ -655,7 +655,7 @@ a {
     fill: #81b3d2;
 }
 
-.copyright-link:focus svg {
+.copyright-link:active svg {
     fill: #bdbbbc;
 }
 
@@ -945,7 +945,7 @@ a {
     color: #81b3d2;
 }
 
-.sort-list a:focus {
+.sort-list a:active {
     color: #000000;
     border-bottom: none;
 }
@@ -972,7 +972,7 @@ a {
     fill: #000000;
 }
 
-.icon-sort:focus svg {
+.icon-sort:active svg {
     fill: #81b3d1;
 }
 
@@ -1068,7 +1068,7 @@ a {
     background-color: #669dc0;
 }
 
-.result-button-more:focus {
+.result-button-more:active {
     color: rgba(256, 256, 256, 0.3);
     background-color: #5495bd;
 }
@@ -1082,7 +1082,7 @@ a {
     background-color: #604e43;
 }
 
-.result-button-booking:focus {
+.result-button-booking:active {
     color: rgba(256, 256, 256, 0.3);
     background-color: #503d32;
 }
